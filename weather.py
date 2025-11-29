@@ -20,7 +20,7 @@ def get_weather(city):
         }
         
         return weather_info
-    except requests.excpetions.RequestException as e:
+    except requests.exceptions.RequestException as e:
         print("Network error", e)
         return None
     except KeyError as e:
